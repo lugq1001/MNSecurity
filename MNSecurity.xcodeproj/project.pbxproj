@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		319931411974C6E300EC5B3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931401974C6E300EC5B3F /* main.m */; };
+		319931441974C6E300EC5B3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931431974C6E300EC5B3F /* AppDelegate.m */; };
+		319931631974C7DE00EC5B3F /* MNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3199315D1974C7DE00EC5B3F /* MNCryptor.m */; };
+		319931641974C7DE00EC5B3F /* MNCryptor+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 3199315E1974C7DE00EC5B3F /* MNCryptor+AES.m */; };
+		319931651974C7DE00EC5B3F /* MNCryptor+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3199315F1974C7DE00EC5B3F /* MNCryptor+MD5.m */; };
+		319931661974C7DE00EC5B3F /* MNCryptor+OTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931601974C7DE00EC5B3F /* MNCryptor+OTP.m */; };
+		319931671974C7DE00EC5B3F /* MNCryptor+RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931611974C7DE00EC5B3F /* MNCryptor+RSA.m */; };
+		319931681974C7DE00EC5B3F /* MNCryptor+SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931621974C7DE00EC5B3F /* MNCryptor+SHA.m */; };
+		3199316A1974C7EE00EC5B3F /* MNSecurityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 319931691974C7EE00EC5B3F /* MNSecurityTests.m */; };
+		319931731974C84000EC5B3F /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 3199316D1974C84000EC5B3F /* dog.png */; };
+		319931741974C84000EC5B3F /* private.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 3199316F1974C84000EC5B3F /* private.p12 */; };
+		319931751974C84000EC5B3F /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 319931701974C84000EC5B3F /* private.pem */; };
+		319931761974C84000EC5B3F /* public.der in Resources */ = {isa = PBXBuildFile; fileRef = 319931711974C84000EC5B3F /* public.der */; };
+		319931771974C84000EC5B3F /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 319931721974C84000EC5B3F /* public.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3199314C1974C6E300EC5B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319931331974C6E300EC5B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3199313A1974C6E300EC5B3F;
+			remoteInfo = MNSecurity;
+		};
+		319931781974C87200EC5B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319931331974C6E300EC5B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3199313A1974C6E300EC5B3F;
+			remoteInfo = MNSecurity;
+		};
+		3199317A1974C87200EC5B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319931331974C6E300EC5B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3199313A1974C6E300EC5B3F;
+			remoteInfo = MNSecurity;
+		};
+		3199317C1974C87800EC5B3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 319931331974C6E300EC5B3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3199313A1974C6E300EC5B3F;
+			remoteInfo = MNSecurity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3199313B1974C6E300EC5B3F /* MNSecurity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MNSecurity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3199313F1974C6E300EC5B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319931401974C6E300EC5B3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		319931421974C6E300EC5B3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		319931431974C6E300EC5B3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3199314B1974C6E300EC5B3F /* MNSecurityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNSecurityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		319931501974C6E300EC5B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3199315C1974C7DE00EC5B3F /* MNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MNCryptor.h; path = Core/MNCryptor.h; sourceTree = "<group>"; };
+		3199315D1974C7DE00EC5B3F /* MNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MNCryptor.m; path = Core/MNCryptor.m; sourceTree = "<group>"; };
+		3199315E1974C7DE00EC5B3F /* MNCryptor+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MNCryptor+AES.m"; path = "Core/MNCryptor+AES.m"; sourceTree = "<group>"; };
+		3199315F1974C7DE00EC5B3F /* MNCryptor+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MNCryptor+MD5.m"; path = "Core/MNCryptor+MD5.m"; sourceTree = "<group>"; };
+		319931601974C7DE00EC5B3F /* MNCryptor+OTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MNCryptor+OTP.m"; path = "Core/MNCryptor+OTP.m"; sourceTree = "<group>"; };
+		319931611974C7DE00EC5B3F /* MNCryptor+RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MNCryptor+RSA.m"; path = "Core/MNCryptor+RSA.m"; sourceTree = "<group>"; };
+		319931621974C7DE00EC5B3F /* MNCryptor+SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MNCryptor+SHA.m"; path = "Core/MNCryptor+SHA.m"; sourceTree = "<group>"; };
+		319931691974C7EE00EC5B3F /* MNSecurityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNSecurityTests.m; sourceTree = "<group>"; };
+		3199316D1974C84000EC5B3F /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		3199316F1974C84000EC5B3F /* private.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private.p12; sourceTree = "<group>"; };
+		319931701974C84000EC5B3F /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		319931711974C84000EC5B3F /* public.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public.der; sourceTree = "<group>"; };
+		319931721974C84000EC5B3F /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		319931381974C6E300EC5B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319931481974C6E300EC5B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		319931321974C6E300EC5B3F = {
+			isa = PBXGroup;
+			children = (
+				3199313D1974C6E300EC5B3F /* MNSecurity */,
+				3199314E1974C6E300EC5B3F /* MNSecurityTests */,
+				3199313C1974C6E300EC5B3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3199313C1974C6E300EC5B3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3199313B1974C6E300EC5B3F /* MNSecurity.app */,
+				3199314B1974C6E300EC5B3F /* MNSecurityTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3199313D1974C6E300EC5B3F /* MNSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				3199315B1974C77900EC5B3F /* Core */,
+				319931421974C6E300EC5B3F /* AppDelegate.h */,
+				319931431974C6E300EC5B3F /* AppDelegate.m */,
+				3199313E1974C6E300EC5B3F /* Supporting Files */,
+			);
+			path = MNSecurity;
+			sourceTree = "<group>";
+		};
+		3199313E1974C6E300EC5B3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3199316B1974C84000EC5B3F /* Resources */,
+				3199313F1974C6E300EC5B3F /* Info.plist */,
+				319931401974C6E300EC5B3F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3199314E1974C6E300EC5B3F /* MNSecurityTests */ = {
+			isa = PBXGroup;
+			children = (
+				319931691974C7EE00EC5B3F /* MNSecurityTests.m */,
+				3199314F1974C6E300EC5B3F /* Supporting Files */,
+			);
+			path = MNSecurityTests;
+			sourceTree = "<group>";
+		};
+		3199314F1974C6E300EC5B3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				319931501974C6E300EC5B3F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3199315B1974C77900EC5B3F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3199315C1974C7DE00EC5B3F /* MNCryptor.h */,
+				3199315D1974C7DE00EC5B3F /* MNCryptor.m */,
+				3199315E1974C7DE00EC5B3F /* MNCryptor+AES.m */,
+				3199315F1974C7DE00EC5B3F /* MNCryptor+MD5.m */,
+				319931601974C7DE00EC5B3F /* MNCryptor+OTP.m */,
+				319931611974C7DE00EC5B3F /* MNCryptor+RSA.m */,
+				319931621974C7DE00EC5B3F /* MNCryptor+SHA.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		3199316B1974C84000EC5B3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3199316C1974C84000EC5B3F /* Images */,
+				3199316E1974C84000EC5B3F /* Keys */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3199316C1974C84000EC5B3F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3199316D1974C84000EC5B3F /* dog.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3199316E1974C84000EC5B3F /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				3199316F1974C84000EC5B3F /* private.p12 */,
+				319931701974C84000EC5B3F /* private.pem */,
+				319931711974C84000EC5B3F /* public.der */,
+				319931721974C84000EC5B3F /* public.pem */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3199313A1974C6E300EC5B3F /* MNSecurity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319931551974C6E300EC5B3F /* Build configuration list for PBXNativeTarget "MNSecurity" */;
+			buildPhases = (
+				319931371974C6E300EC5B3F /* Sources */,
+				319931381974C6E300EC5B3F /* Frameworks */,
+				319931391974C6E300EC5B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MNSecurity;
+			productName = MNSecurity;
+			productReference = 3199313B1974C6E300EC5B3F /* MNSecurity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3199314A1974C6E300EC5B3F /* MNSecurityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 319931581974C6E300EC5B3F /* Build configuration list for PBXNativeTarget "MNSecurityTests" */;
+			buildPhases = (
+				319931471974C6E300EC5B3F /* Sources */,
+				319931481974C6E300EC5B3F /* Frameworks */,
+				319931491974C6E300EC5B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3199314D1974C6E300EC5B3F /* PBXTargetDependency */,
+				319931791974C87200EC5B3F /* PBXTargetDependency */,
+				3199317B1974C87200EC5B3F /* PBXTargetDependency */,
+				3199317D1974C87800EC5B3F /* PBXTargetDependency */,
+			);
+			name = MNSecurityTests;
+			productName = MNSecurityTests;
+			productReference = 3199314B1974C6E300EC5B3F /* MNSecurityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		319931331974C6E300EC5B3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "陆广庆";
+				TargetAttributes = {
+					3199313A1974C6E300EC5B3F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3199314A1974C6E300EC5B3F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3199313A1974C6E300EC5B3F;
+					};
+				};
+			};
+			buildConfigurationList = 319931361974C6E300EC5B3F /* Build configuration list for PBXProject "MNSecurity" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 319931321974C6E300EC5B3F;
+			productRefGroup = 3199313C1974C6E300EC5B3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3199313A1974C6E300EC5B3F /* MNSecurity */,
+				3199314A1974C6E300EC5B3F /* MNSecurityTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		319931391974C6E300EC5B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319931731974C84000EC5B3F /* dog.png in Resources */,
+				319931751974C84000EC5B3F /* private.pem in Resources */,
+				319931761974C84000EC5B3F /* public.der in Resources */,
+				319931741974C84000EC5B3F /* private.p12 in Resources */,
+				319931771974C84000EC5B3F /* public.pem in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319931491974C6E300EC5B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		319931371974C6E300EC5B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				319931651974C7DE00EC5B3F /* MNCryptor+MD5.m in Sources */,
+				319931641974C7DE00EC5B3F /* MNCryptor+AES.m in Sources */,
+				319931671974C7DE00EC5B3F /* MNCryptor+RSA.m in Sources */,
+				319931631974C7DE00EC5B3F /* MNCryptor.m in Sources */,
+				319931441974C6E300EC5B3F /* AppDelegate.m in Sources */,
+				319931661974C7DE00EC5B3F /* MNCryptor+OTP.m in Sources */,
+				319931411974C6E300EC5B3F /* main.m in Sources */,
+				319931681974C7DE00EC5B3F /* MNCryptor+SHA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		319931471974C6E300EC5B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3199316A1974C7EE00EC5B3F /* MNSecurityTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3199314D1974C6E300EC5B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3199313A1974C6E300EC5B3F /* MNSecurity */;
+			targetProxy = 3199314C1974C6E300EC5B3F /* PBXContainerItemProxy */;
+		};
+		319931791974C87200EC5B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3199313A1974C6E300EC5B3F /* MNSecurity */;
+			targetProxy = 319931781974C87200EC5B3F /* PBXContainerItemProxy */;
+		};
+		3199317B1974C87200EC5B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3199313A1974C6E300EC5B3F /* MNSecurity */;
+			targetProxy = 3199317A1974C87200EC5B3F /* PBXContainerItemProxy */;
+		};
+		3199317D1974C87800EC5B3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3199313A1974C6E300EC5B3F /* MNSecurity */;
+			targetProxy = 3199317C1974C87800EC5B3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		319931531974C6E300EC5B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		319931541974C6E300EC5B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		319931561974C6E300EC5B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MNSecurity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		319931571974C6E300EC5B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MNSecurity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		319931591974C6E300EC5B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MNSecurity.app/MNSecurity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MNSecurityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3199315A1974C6E300EC5B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MNSecurity.app/MNSecurity";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MNSecurityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		319931361974C6E300EC5B3F /* Build configuration list for PBXProject "MNSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319931531974C6E300EC5B3F /* Debug */,
+				319931541974C6E300EC5B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		319931551974C6E300EC5B3F /* Build configuration list for PBXNativeTarget "MNSecurity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319931561974C6E300EC5B3F /* Debug */,
+				319931571974C6E300EC5B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		319931581974C6E300EC5B3F /* Build configuration list for PBXNativeTarget "MNSecurityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				319931591974C6E300EC5B3F /* Debug */,
+				3199315A1974C6E300EC5B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 319931331974C6E300EC5B3F /* Project object */;
+}
