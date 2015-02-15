@@ -1,4 +1,7 @@
 ###API
+
+iOS加密工具类
+
 #####Common:
 ```
 + (NSString *) b64Encode:(id)stringOrData;
